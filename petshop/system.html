@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/system.css" type="text/css" />
+</head>
+<body>
+    <div id="menu">
+        <div class="logo">
+            <a href="main_page.html"><img src="photos/logo.png" alt="" class="logoImg" style="height: 100px;"></a>
+        </div>
+
+        <button id="state" onclick="checkAvailability()">Sprawdź dostępność</button>
+        <button id="productsInBase" onclick="modifications()">Prodkty zarządzanie</button>
+        <button id="checkMails" onclick="checkMails()">Sparawdz maile</button>
+        <button id="orders" onclick="checkOrders()">Zamówienia</button>
+    </div>
+
+
+
+
+    <div id="searchFor" class="main">
+        <input type="text" id="wyszukaj" placeholder="wyszukaj...">
+        <input type="button" value="Wyszukaj"> 
+    </div>
+
+
+    <!-- <div id="addItem" class="main">
+        <input type="text" placeholder="Tytuł">
+        <input type="text" placeholder="Cena">
+        <input type="button" value="Dodaj"> 
+    </div>
+
+
+    <div id="delateItem" class="main">
+        <h5>Wpisz Tytuł produktu ktory chcesz usunac</h5>
+        <input type="text" placeholder="Tytuł">
+        <input type="button" value="Usun produkt"> 
+    </div> -->
+
+    <div id="modifyItem" class="main">
+        <h5>znajdz po Tytule</h5>
+        <input type="text" placeholder="Tytuł">
+        <h5>zmien Cene</h5>
+        <input type="text" placeholder="Cena">
+        <input type="button" value="Zmień">
+        <a href="modyfikacja_modyfikacja_tytul.html"><input type="button" value="zamien miejscami"></a>
+    </div>
+
+
+    <div id="mainForMail" class="main">
+        <div class="space"></div>
+        <div class="buttons">
+            <button class="writeMail">+</button>
+            <button class="delateMail">Usuń</button>
+            <button class="sort">Posortuj</button>
+            <span class="info">Masz nieodczytanie 2 maile.</span>
+        </div>
+        <div class="mailsDisplay">
+            <div class="mail" id="unseen">
+                <span class="sender">Maria Kowalska</span>
+                <span class="mailInfo">mariakowa222@gmail.com</span><br>
+                <span class="tittle">Zwrot karmy dla kota</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="unseen">
+                <span class="sender">Tomasz Wawrzyniak</span>
+                <span class="mailInfo">tomekwawrzyniakkk@gmail.com</span><br>
+                <span class="tittle">Pytanie odnośnie sklep...</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Nikodem Krawczyk</span>
+                <span class="mailInfo">nikodem0krawczyk@gmail.com</span><br>
+                <span class="tittle"><em>Skarga na pracownika, ze względu na brak kul...</em></span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Dawid Borkowski</span>
+                <span class="mailInfo">dawidborkowski@gmail.com</span><br>
+                <span class="tittle">Zwrot</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Sylwia Pakuła</span>
+                <span class="mailInfo">sylwka@gmail.com</span><br>
+                <span class="tittle">zwrot</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Nikodem Krawczyk</span>
+                <span class="mailInfo">nikodem0krawczyk@gmail.com</span><br>
+                <span class="tittle"><em>Brak tematu.</em></span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Dawid Borkowski</span>
+                <span class="mailInfo">dawidborkowski@gmail.com</span><br>
+                <span class="tittle">Zwrot</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Patrycja Łuczewska</span>
+                <span class="mailInfo">sylwka@gmail.com</span><br>
+                <span class="tittle">zwrot</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Natalia Drzewek</span>
+                <span class="mailInfo">nikodem0krawczyk@gmail.com</span><br>
+                <span class="tittle"><em>Brak tematu.</em></span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Sandra Strumyk</span>
+                <span class="mailInfo">dawidborkowski@gmail.com</span><br>
+                <span class="tittle">Zwrot</span>
+            </div>
+            <div class="spaceBetween"></div>
+            <div class="mail" id="seen">
+                <span class="sender">Amelia Kuczkowska</span>
+                <span class="mailInfo">sylwka@gmail.com</span><br>
+                <span class="tittle">zwrot</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="forOrders" class="main">
+        <input type="text" id="wyszukaj" placeholder="wyszukaj...">
+        <input type="button" value="Wyszukaj"> 
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

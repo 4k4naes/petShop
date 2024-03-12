@@ -1,0 +1,284 @@
+body{
+    /* Background pattern from subtlepatterns.com */
+	background-image: url("photos/hexellence.png");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+}
+
+#menu button{
+    cursor: pointer;
+    padding: 15px 25px;
+    height: 50px;
+    background-color: #36b03c;
+    border-radius: 5px ;
+    color:white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 20px;
+}
+
+#menu button:hover{
+    background-color: #33a238;
+}
+ol {
+    list-style-type: none;
+}
+.menu-item-active{
+    background-color: #428c42;
+}
+/* #mod-lista{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    display: none;
+    background-color: #36b03c;
+    border-radius: 10px;
+} */
+/* #modyfikowanie:hover > #mod-lista{
+    display: block;
+}
+#modyfikowanie:hover > #mod-info{
+    display: none;
+} */
+.list-li-value{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 25px;
+    margin-bottom: 2px;
+    background-color: #33a238;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text]
+{
+	width: 290px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+    margin-right: 20px;
+}
+input[type=button]{
+	min-width: 220px;
+	background-color: #36b03c;
+	font-size:20px;
+	color: white;
+	padding: 12px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+    margin-left:5px ;
+}
+
+
+
+
+
+
+
+
+
+#searchFor{
+    width: 500px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* border-radius:20px; */
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+    margin-top: 100px;
+}
+
+
+#addItem{
+    width: 500px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius:20px; */
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+    display: none;
+    margin-top: 100px;
+}
+
+#delateItem{
+    width: 500px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius:20px; */
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+    display: none;
+    margin-top: 100px;
+}
+
+
+#modifyItem{
+    width: 500px;
+    min-height: 200px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius:20px; */
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+    display: none;
+    margin-top: 100px;
+}
+
+
+.main input[type=button]{
+    width: 300px;
+}
+
+
+#forOrders{
+    width: 500px;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* border-radius:20px; */
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+    display: none;
+    margin-top: 100px;
+}
+
+
+/* Dla maili ----------------------------------------------------*/
+
+#mainForMail{
+    box-shadow: 0px -0px 20px 0px rgb(165, 165, 167);
+    background-color: white;
+    width: 1000px;
+    height: 830px;
+    margin: auto;
+    margin-top: 50px;
+    display: none;
+    margin-top: 100px;
+}
+.space{height: 25px;}
+.buttons{
+    width: 900px;
+    height: 50px;
+    /* background-color: #33a238; */
+    margin: auto;
+}
+.writeMail{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #33a238;
+    background-color: white;
+    color: #33a238;
+    margin-right: 20px;
+}
+.delateMail, .sort{
+    font-size: 20px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #33a238;
+    background-color: white;
+    color: #33a238;
+    margin-right: 20px;
+}
+.buttons button:hover{
+    background-color: #33a238;
+    color: white;
+}
+.info{
+    font-size: 15px;
+    color: rgb(196, 196, 196);
+}
+.mailsDisplay{
+    margin-top: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 700px;
+}
+.mailsDisplay .mail{
+    background-color: #ffffff;
+    width: 900px;
+    margin: auto;
+    height: 70px;
+}
+.sender{
+    font-size: 25px;
+    font-weight: 600;
+}
+.mailInfo{
+    font-size: 15px;
+    color: #969696;
+}
+.tittle{
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(112, 112, 112);
+}
+
+
+.spaceBetween{
+    width: 900px;
+    margin: auto;
+    height: 1px;
+    background-color: #9c9c9c;
+    /* margin-top: -20px; */
+    margin-bottom: 10px;
+}
+
+#unseen{
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+
+
+/* PRODUKTY DISPLAY MAIN PAGE ==========================================================================================================*/
+
+
+

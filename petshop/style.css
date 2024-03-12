@@ -1,0 +1,427 @@
+body{
+    background-color: #FAF6F2;
+    margin: 0;
+}
+.navBar{
+    position: sticky;
+    background-color: #FAF6F2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#container{
+    min-width: 1400px;
+    min-height:100%;
+    margin: 0;
+    position:relative;
+}
+    /* background-color: #05386B;
+    color: #EDF5E1; */
+.buttons button{
+    background-color: transparent;
+    position: relative;
+    color: #683B2B;
+    border: none;
+    height: 42px;
+    top: -40px;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-bottom: 5px transparent solid;
+}
+.buttons button:hover{
+    /* background-color: #05386B;
+    color: #EDF5E1; */
+    transition: all .5s ease;
+    border-bottom: 5px #B08401 solid;
+}
+.loggingBtns button{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border-radius: 1px;
+    background-color: #683B2B;
+    border: none;
+    color: #FAF6F2;
+    height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 0 10px;
+}
+.loggingBtns button:hover{
+    background-color: #B08401;
+}
+#searchBar{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    right: 120px;
+    top: 30px;
+    border: none;
+    border-bottom: 2px solid #683B2B;
+    background-color: transparent;
+    text-align: right;
+}
+#searchBar:focus{
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #683B2B;
+    transition: all .5s ease;
+}
+#searchBar::placeholder{
+    color: #683B2B;
+    font-weight: 700;
+}
+
+
+
+/* ======== LOGIN I REGISTER ==============================================================================*/
+
+
+form{
+    margin-top: 50px;
+}
+#registerForm, #loginForm{
+    display: block;
+    background-color: #DED1BD;
+    height: 410px;
+    width: 300px;
+    position: fixed;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    border: 3px #B08401  solid;
+    border-radius: 10px;
+    top: 500px;
+}
+#registerForm{
+    min-height: 740px;
+    width: 400px;
+}
+#registerForm .tittle, #loginForm .tittle{
+    margin-top: 0;
+    height: 60px;
+    color: #DED1BD;
+    font-family: Arial;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    background-color: #B08401;
+}
+#registerForm .tittle button, #loginForm .tittle button{
+    background-color: transparent;
+    color: #DED1BD;
+    border: none;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+#registerForm .tittle button:hover, #loginForm .tittle button:hover{
+    color: #FAF6F2 ;
+}
+#registerForm .user-box, #loginForm .user-box{
+	position:relative;
+}
+#registerForm .user-box input, #loginForm .user-box input{
+	width:250px;
+    margin-left: 25px;
+	padding: 10px 0;
+	font-size:16px;
+	color: #B08401;
+    margin-top: 10px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 2px solid #683B2B;
+	outline: none;
+	background: transparent;
+}
+#registerForm .user-box input{
+    width: 340px;
+}
+#registerForm .user-box label, #loginForm .user-box label{
+	position: absolute;
+	top: 0;
+	left: 0;
+    margin-left: 25px;
+	padding:10px 0;
+	font-size:16px;
+	color:#683B2B;
+	pointer-events: none;
+	transition: .5s;
+    font-family: arial;
+}
+#registerForm .user-box input:focus ~ label,
+#registerForm .user-box input:valid ~ label,
+#loginForm .user-box input:focus ~ label,
+#loginForm .user-box input:valid ~ label{
+	top: -20%;
+	left:0;
+	font-size: 12px;
+}
+#loginForm input[type="button"], #registerForm input[type="button"]{
+    background-color: #B08401;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    color: #DED1BD;
+    width: 250px;
+    margin-left: 25px;
+    height: 40px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#registerForm input[type="button"]{
+    width: 340px;
+}
+#loginForm input[type="button"]:hover, #registerForm input[type="button"]:hover{
+    background-color: #DED1BD;
+    border: 2px #B08401 solid;
+    color: #B08401;
+}
+
+.error{
+    font-family: arial;
+    font-size: 12px;
+    margin-left: 25px;
+    margin-top: -28px;
+    margin-bottom: 30px;
+    color: #683B2B;
+}
+
+
+/* ================ BANNER ===================================================================================== */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    min-width: 1300px;
+    /* position: relative; */
+    margin: auto;
+    overflow: hidden;
+    position: absolute;   
+    left: 50%;  
+    transform: translate(-50%);
+    top: 150px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  top: 220px;
+  display: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dots{
+    margin-top: -30px;
+    display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*============== NEWS =========================================*/
+
+
+#headerBEST, #headerNEW{
+    position: relative;
+    font-family: arial;
+    font-weight: 700;
+    margin-left: 40px;
+    color: #683B2B;
+    font-size: 30px;
+}
+.news .newsCards{
+    float: right;
+    position: relative;
+    top: -70px;
+    margin-right: 20px;
+}
+.bestseller .newsCards{
+    float: right;
+    position: relative;
+    top: -63px;
+    margin-right: 20px;
+}
+.newsCards button{
+    padding: 5px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    color: #683B2B;
+}
+.newsCards button:hover{
+    border: 1px #683B2B solid;
+    background-color: transparent;
+
+}
+.active, #nextCard, #nextCard2{
+    color: #EDF5E1;
+    background-color: #683B2B;
+}
+.news .active:hover, #nextCard:hover, #nextCard2:hover{
+    border: 1px #683B2B solid;
+    background-color: transparent;
+    color: #683B2B;
+} 
+
+.news .productsInNew, .bestsellers .productsInBest{
+    width: 1300px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    position: relative;
+    background-color: #D49E8D;
+    width: 220px;
+    height: 300px;
+    box-shadow: -10px 10px 0px 0px #683B2B;
+    text-align: center;
+    font-family: arial;
+}
+.product:hover{
+    background-color: #bb8d7f;
+}
+.product img{
+    height: 150px;
+    margin-top: 20px;
+}
+.productName{
+    padding: 0 15px;
+    text-align: left;
+    font-weight: 800;
+    color: #683B2B;
+    font-size: 13px;
+}
+.price{
+    float: left;
+    padding: 0 15px;
+    margin-top: 20px;
+    color: #683B2B;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.priccePerKg{
+    float: right;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+
+.bestsellers{
+    /* background-color: #5CDB95; */
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;		/* Wysokość stopki */
+    background-color:#683B2B;
+    font-family: Arial;
+    color: #FAF6F2;
+    padding: 0 20px;
+}

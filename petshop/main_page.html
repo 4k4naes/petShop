@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET SHOP - Strona główna</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!--http://127.0.0.1:5500/main_page.html-->
+</head>
+<body>  
+    <div id="container">
+        <div class="navBar">
+            <nav>
+                <div class="buttons">
+                    <a href="main_page.html"><img src="photos/PETSHOP_LOGO.png" alt="" style="height: 100px; margin-right: 40px;"></a>
+                    <a href="cart.html"><button id="cart">Koszyk</button></a>
+                    <a href="map.html"><button id="sklepy">Sklepy</button></a>
+                    <button id="categories">kategorie</button>
+                    
+                    <a href="system.html" onclick="setNames()"><button id="workspace">Dla Pracownika</button></a>
+    
+                </div>
+                    <!-- <button id="register" onclick="showRegister()">Zarejestreuj się</button> -->
+                <div class="loggingBtns">
+                    <button id="login" onclick="showLogin()">Loguj</button>
+                    <button id="logout" onclick="logout()">Wyloguj</button>
+                </div> 
+                <input type="text" name="searchBar" id="searchBar" placeholder="Wyszukaj produkty...">
+    
+            </nav>
+        </div>
+        
+
+        <div class="main" style="width: 1000px; margin: 0; height: 4000px;">
+            <div class="slideshow-container">
+
+                <div id="container">
+                    <div class="mySlides fade">
+                        <img src="photos/baner-brit-advertisement.png" style="width: 100%;">
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="photos/baner-dogs-advertisement.png" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="photos/baner-soya-advertisement.png" style="width: 100%;">
+                    </div>
+            
+                    <br>
+            
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+            
+                <div style="text-align: center;" id="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                
+            <div class="news">
+                <div class="new">
+                    <p id="headerNEW">NOWOŚCI</p>
+                    <div class="newsCards">
+                        <button id="one">1</button>
+                        <button id="two">2</button>
+                        <button id="three">3</button>
+                        <button id="four">4</button>
+                        <button id="nextCard">NASTĘPNA ></button>
+                    </div>
+                </div>
+                <div class="productsInNew">
+                    <div class="product" id="productOne">
+                        <img src="photos/catFood.png" alt="">
+                        <p class="productName">Karma pure gowno RAGHHHHH</p>
+                        <p class="price">23.99zł</p>
+                        <p class="priccePerKg">890.78zł/1kg</p>
+                    </div>
+                    <div class="product" id="productTwo">
+                        
+                    </div>
+                    <div class="product" id="productThree">
+                        
+                    </div>
+                    <div class="product" id="productFour">
+                        
+                    </div>
+                    <div class="product" id="productFour">
+                        
+                    </div>
+                </div>
+            </div>    
+        
+
+
+            <div class="bestsellers">
+                <div class="bestseller">
+                    <p id="headerBEST">BESTSELLERY</p>
+                    <div class="newsCards">
+                        <button id="one2">1</button>
+                        <button id="two2">2</button>
+                        <button id="three2">3</button>
+                        <button id="four2">4</button>
+                        <button id="nextCard2">NASTĘPNA ></button>
+                    </div>
+                </div> 
+                <div class="productsInBest">
+                    <div class="product" id="productOne2">
+                       
+                    </div>
+                    <div class="product" id="productTwo2">
+                        
+                    </div>
+                    <div class="product" id="productThree2">
+                        
+                    </div>
+                    <div class="product" id="productFour2">
+                        
+                    </div>
+                    <div class="product" id="productFour">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="summary">
+        <span class="header">PODSUMOWANIE</span><button id="exitSummary" onclick="closeSummary()">x</button><br>
+        <div class="inside">
+            <div class="inside1">
+                <span class="info1" id="info">Paczkomat InPost: 9,80zł</span>
+                <span class="change1" id="change">zmień dostawę</span><br>
+            </div>
+            <div class="inside1">
+                <span class="info2" id="info">Zakup bez faktury</span>
+                <span class="change2" id="change">dodaj fakturę</span><br>
+            </div>
+            <div class="inside1">
+                <span class="info3" id="info">BLIK</span>
+                <span class="change3" id="change">zmień płatność</span><br>
+            </div>
+        </div>
+        <input type="text" placeholder="Kod BLIK (6 cyfr)"><label></label><br>
+        <button class="pay" onclick="hideSummary()">Zapłać: </button>
+    </div>
+    <!-- <div id="infoAboutPurchase">
+        <p class="infoAboutPurchase">
+            Zakupy udane :)
+        </p>
+    </div> -->
+
+
+
+    <footer>
+        <p>rAGHHHHHHHHHHH</p>
+    </footer>
+</div>
+
+    <div id="loginForm">
+        <p class="tittle">LOGIN FORM<button class="exit" onclick="exitLogin()">x</button></p>
+		<form>
+            <div class="user-box">
+                <input type="text" name="" required="" id="username">
+                <label>Username</label>
+                <div id="loginError" class="error"></div>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="" id="password">
+                <label>Password</label>
+                <div id="passwordError" class="error"></div>
+            </div>
+            <input type="button" value="Zaloguj się" onclick="login()">	<br>	
+			<input type="button" value="Nie mam konta" onclick="showRegister()">		
+		</form>
+	</div>
+
+
+	<div id="registerForm">
+        <p class="tittle">REGISTER FORM<button class="exit" onclick="exitLogin()">x</button></p>
+		<form>
+            <div class="user-box">
+                <input type="text" name="" required="" id="regName">
+                <label>Imię</label>
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" required="" id="regSurname">
+                <label>Nazwisko</label>
+                <div id="surnameError" class="error"></div>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" required="" id="regLogin">
+                <label>Nazwa użytkownika</label>
+                <div id="regLoginError" class="error"></div>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" required="" id="regAdress">
+                <label>Email</label>
+                <div id="adressError" class="error"></div>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" required="" id="regPassword">
+                <label>Hasło</label>
+                <div id="regPasswordError" class="error"></div>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" required="" id="regRepeatedPassword">
+                <label>Powtórz hasło</label>
+                <div id="regRepeatedPasswordError" class="error"></div>
+            </div>
+			<input type="button" value="Zarejestruj" onclick="register()"><br>
+			<input type="button" value="Mam już konto" onclick="showLogin()">	
+		</form>
+    
+
+
+    
+    <script src="java.js"></script>
+</body>
+</html>

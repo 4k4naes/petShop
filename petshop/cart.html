@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <!--http://127.0.0.1:5500/cart.html-->
+
+</head>
+<body> 
+
+ 
+    <div id="container">
+        <nav>
+            <div class="logo">
+                <a href="main_page.html"><img src="photos/logo.png" alt="" class="logoImg"></a>
+             </div>
+            <div class="loginButtons">
+                <a href="main_page.html"><button class="register">Wróć</button></a>
+            </div>
+        </nav>
+        <div class="main">
+            <aside>
+                <img src="photos/advertisement1.png" alt="" class="add1">
+            </aside>
+            <section>
+                <div class="cartInventory">
+                    <div class="lowBar">
+                        <button class="buyAll"  onclick="showSummary()">Kup wszystko</button>
+                        <button class="clear">Wyczyść</button>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <img src="photos/advertisement2.png" alt="" class="add2">
+            </aside>
+        </div>
+        <footer></footer>
+    </div>
+
+
+    <div id="summary">
+        <span class="header">PODSUMOWANIE</span><button id="exitSummary" onclick="closeSummary()">x</button><br>
+        <div class="inside">
+            <div class="inside1">
+                <span class="info1" id="info">Paczkomat InPost: 9,80zł</span>
+                <span class="change1" id="change">zmień dostawę</span><br>
+            </div>
+            <div class="inside1">
+                <span class="info2" id="info">Zakup bez faktury</span>
+                <span class="change2" id="change">dodaj fakturę</span><br>
+            </div>
+            <div class="inside1">
+                <span class="info3" id="info">BLIK</span>
+                <span class="change3" id="change">zmień płatność</span><br>
+            </div>
+        </div>
+        <input type="text" placeholder="Kod BLIK (6 cyfr)"><label></label><br>
+        <button class="pay" onclick="hideSummary()">Zapłać: </button>
+    </div>
+    <!-- <div id="infoAboutPurchase">
+        <p class="infoAboutPurchase">
+            Zakupy udane :)
+        </p>
+    </div> -->
+
+
+    <script src="java.js"></script>
+</body>
+</html>
